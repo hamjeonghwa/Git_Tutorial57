@@ -1,7 +1,7 @@
 @Controller
 public class UserController{
 
-    // 로그인 페이지로 이동
+    // 로그인 페이지로 이동 !!
     @RequestMapping("/user/login.do")
     public String login() {
         logger.info("경로 : login")
@@ -23,5 +23,13 @@ public class UserController{
         logger.info("경로 : update")
 
         return "user/update";
+    }	
+
+    // 회원삭제 페이지로 이동 !!
+    @RequestMapping("/user/delete.do")
+    public String delete() {
+        logger.info("경로 : delete")
+
+        return "user/delete";
     }		
 }
