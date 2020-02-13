@@ -25,11 +25,19 @@ public class UserController{
         return "user/update";
     }	
 
-    // 회원삭제 페이지로 이동 !!
+    // 회원삭제 페이지로 이동 ~~
     @RequestMapping("/user/delete.do")
     public String delete() {
         logger.info("경로 : delete")
 
         return "user/delete";
     }		
+
+   // 회원조회 페이지로 이동 ~~ -- master에서 작업
+    @RequestMapping("/user/select.do")
+    public String select() {
+        logger.info("경로 : select")
+
+        return "user/select";
+    }	
 }
